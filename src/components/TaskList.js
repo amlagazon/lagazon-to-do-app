@@ -1,42 +1,42 @@
 import {
   MDBCardBody,
-  MDBIcon,
   MDBTable,
   MDBTableBody,
   MDBTableHead,
-  MDBBtn,
   MDBCard,
-  MDBTooltip,
+  MDBCol,
 } from "mdb-react-ui-kit";
 import TaskRow from "./TaskRow";
 import AddTask from "./AddTask";
 export default function TaskList() {
   return (
-    <section id="list1">
-      <MDBCardBody className="p-4">
-        <div className="text-center pt-3 pb-2">
-          <img
-            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp"
-            alt="Check"
-            width="60"
-          />
-          <h2 className="my-4">Task List</h2>
-          <AddTask />
-        </div>
-        <MDBTable className="mb-0">
-          <MDBTableHead>
-            <tr>
-              <th scope="col">Team Member</th>
-              <th scope="col">Task</th>
-              <th scope="col">Priority</th>
-              <th scope="col">Actions</th>
-            </tr>
-          </MDBTableHead>
-          <MDBTableBody>
-            <TaskRow />
-            <TaskRow />
-            <TaskRow />
-            {/* <tr className="fw-normal">
+    <MDBCol md="12" xl="10">
+      <MDBCard className="mask-custom">
+        <section id="list1">
+          <MDBCardBody className="p-4">
+            <div className="text-center pt-3 pb-2">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp"
+                alt="Check"
+                width="60"
+              />
+              <h2 className="my-4">Task List</h2>
+              <AddTask />
+            </div>
+            <MDBTable className="mb-0">
+              <MDBTableHead>
+                <tr>
+                  <th scope="col">Team Member</th>
+                  <th scope="col">Task</th>
+                  <th scope="col">Priority</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </MDBTableHead>
+              <MDBTableBody>
+                <TaskRow />
+                <TaskRow />
+                <TaskRow />
+                {/* <tr className="fw-normal">
               <th>
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
@@ -212,9 +212,11 @@ export default function TaskList() {
                 </MDBTooltip>
               </td>
             </tr> */}
-          </MDBTableBody>
-        </MDBTable>
-      </MDBCardBody>
-    </section>
+              </MDBTableBody>
+            </MDBTable>
+          </MDBCardBody>
+        </section>
+      </MDBCard>
+    </MDBCol>
   );
 }
