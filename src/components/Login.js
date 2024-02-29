@@ -17,7 +17,6 @@ export default function Login() {
           <p className="text-white-50 mb-3">
             Please enter your login and password!
           </p>
-
           <MDBInput
             wrapperClass="mb-4 w-100"
             label="Email address"
@@ -32,18 +31,14 @@ export default function Login() {
             type="password"
             size="lg"
           />
-
           <MDBCheckbox
             name="flexCheck"
             id="flexCheckDefault"
             className="mb-4"
             label="Remember password"
           />
-
           <MDBBtn size="lg">Login</MDBBtn>
-
           <hr className="my-4" />
-
           <MDBBtn
             className="mb-2 w-100"
             size="lg"
@@ -52,7 +47,6 @@ export default function Login() {
             <MDBIcon fab icon="google" className="mx-2" />
             Sign in with google
           </MDBBtn>
-
           <MDBBtn
             className="mb-4 w-100"
             size="lg"

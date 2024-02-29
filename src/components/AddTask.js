@@ -1,9 +1,6 @@
 import {
   MDBCardBody,
   MDBIcon,
-  MDBTable,
-  MDBTableBody,
-  MDBTableHead,
   MDBBtn,
   MDBCard,
   MDBTooltip,

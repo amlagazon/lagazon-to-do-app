@@ -28,6 +28,8 @@ export default function TaskRow() {
           </MDBBadge>
         </h6>
       </td>
+      <td className="align-middle">DATE</td>
+      <td className="align-middle">TIME</td>
       <td className="align-middle">
         <MDBTooltip tag="a" wrapperProps={{ href: "#!" }} title="Done">
           <MDBIcon

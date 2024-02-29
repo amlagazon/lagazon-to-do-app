@@ -26,9 +26,11 @@ export default function TaskList() {
             <MDBTable className="mb-0">
               <MDBTableHead>
                 <tr>
-                  <th scope="col">Team Member</th>
+                  <th scope="col">User</th>
                   <th scope="col">Task</th>
                   <th scope="col">Priority</th>
+                  <th scope="col">Due Date</th>
+                  <th scope="col">Time</th>
                   <th scope="col">Actions</th>
                 </tr>
               </MDBTableHead>
